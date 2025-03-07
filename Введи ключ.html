@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ключ к сердцу ❤️</title>
+    <style>
+        body {
+            background-color: #ffe4e1; /* Нежно-розовый фон */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: #d14784; /* Розовый текст */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+
+        input {
+            padding: 10px;
+            border: 2px solid #ffb6c1;
+            border-radius: 5px;
+            width: 200px;
+            text-align: center;
+            font-size: 18px;
+            color: #d14784;
+            outline: none;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ffb6c1;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            color: white;
+            transition: 0.3s;
+        }
+
+            button:hover {
+                background-color: #d14784;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Введи ключ к нашему сердцу 💕</h1>
+        <input type="text" id="password" placeholder="Введите ключ">
+        <br>
+        <button onclick="checkPassword()">Пуск</button>
+    </div>
+
+    <script>
+        function checkPassword() {
+            let password = document.getElementById('password').value;
+            if (password === "14022021") {
+                window.location.href = "valentine.html"; // Перенаправление на другую страницу
+            } else {
+                alert("Неверный ключ 😢");
+            }
+        }
+    </script>
+</body>
+</html>
